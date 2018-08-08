@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+..//src/buffer.h
+assert.h
+-
+vector
+-
+src/types.h
+../src/src/types.h
+
+..//src/types.h
+string
+-
+
+/home/ubuntu/luoxiaojian/buffer/tests/buffer_test.cc
+gtest/gtest.h
+-
+glog/logging.h
+-
+string
+-
+src/buffer.h
+/home/ubuntu/luoxiaojian/buffer/tests/src/buffer.h
+src/types.h
+/home/ubuntu/luoxiaojian/buffer/tests/src/types.h
+

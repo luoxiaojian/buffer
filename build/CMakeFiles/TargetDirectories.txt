@@ -1,0 +1,4 @@
+/home/ubuntu/luoxiaojian/buffer/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/luoxiaojian/buffer/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/luoxiaojian/buffer/build/CMakeFiles/memcpy_benchmark.dir
+/home/ubuntu/luoxiaojian/buffer/build/CMakeFiles/buffer_test.dir

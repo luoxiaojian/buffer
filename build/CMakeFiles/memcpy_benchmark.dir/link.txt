@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -pthread  -rdynamic CMakeFiles/memcpy_benchmark.dir/benchmarks/memcpy_benchmark.cc.o  -o memcpy_benchmark -lglog -lgflags /usr/local/lib/libbenchmark.a 

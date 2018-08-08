@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/luoxiaojian/buffer/benchmarks/memcpy_benchmark.cc
+benchmark/benchmark.h
+-
+string.h
+-
+
+/usr/local/include/benchmark/benchmark.h
+stdint.h
+-
+algorithm
+-
+cassert
+-
+cstddef
+-
+iosfwd
+-
+map
+-
+set
+-
+string
+-
+vector
+-
+initializer_list
+-
+type_traits
+-
+utility
+-
+intrin.h
+-
+

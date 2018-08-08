@@ -11,12 +11,12 @@ class BufferBase {
  public:
   virtual ~BufferBase() {}
 
-  virtual void* data() const = 0;
-  virtual size_t size() const = 0;
-  virtual DataType type() const = 0;
+  virtual void* data() = 0;
+  virtual size_t size() = 0;
+  virtual DataType type() = 0;
 
   template <typename T>
-  T* base() const {
+  T* base() {
     return reinterpret_cast<T*>(data());
   }
 };
@@ -27,9 +27,9 @@ class Buffer : public BufferBase {
   Buffer() {}
   Buffer(size_t size) : data_(size), updated_(size, false) {}
 
-  void* data() const { return reinterpret_cast<void*>(&data_[0]); }
-  size_t size() const { return data_.size(); }
-  DataType type() const { return DataTypeToEnum<T>::value; }
+  void* data() { return reinterpret_cast<void*>(&data_[0]); }
+  size_t size() { return data_.size(); }
+  DataType type() { return DataTypeToEnum<T>::value; }
 
   void SetValue(int index, const T& value) {
     data_[index] = value;
